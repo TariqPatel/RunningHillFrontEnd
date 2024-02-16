@@ -11,14 +11,14 @@ interface Props {
 export default function ActivityDetails({activity, cancelSelectActivity, openForm}: Props) {
     return (
     <Card fluid>
-        <Image src={`/assets/categoryImages/${activity.category}.jpg`}/>
+        <Image src={`/assets/categoryImages/${activity.sentence}.jpg`}/>
         <CardContent>
-            <CardHeader>{activity.title}</CardHeader>
+            <CardHeader>{activity.sentence}</CardHeader>
             <CardMeta>
-                <span>{activity.date}</span>
+                <span>{activity.sentence}</span>
             </CardMeta>
             <CardDescription>
-                {activity.description} 
+                {activity.sentence} 
             </CardDescription>
         </CardContent>
         <CardContent extra>

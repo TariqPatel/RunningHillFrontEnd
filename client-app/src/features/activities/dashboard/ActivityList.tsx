@@ -14,15 +14,15 @@ export default function ActivityList({activities, selectActivity}: Props) {
                 {activities.map(activity => (
                     <Item key={activity.id}>
                         <Item.Content>
-                            <Item.Header as="a">{activity.title}</Item.Header>
-                            <Item.Meta>{activity.date}</Item.Meta>
+                            <Item.Header as="a">{activity.sentence}</Item.Header>
+                            <Item.Meta>{activity.sentence}</Item.Meta>
                             <Item.Description>
-                                {activity.description}
-                                {activity.city}, {activity.venue}
+                                {activity.sentence}
+                                {activity.sentence}, {activity.sentence}
                             </Item.Description>
                             <Item.Extra>
                                 <Button onClick={() => selectActivity(activity.id)} floated="right" content="View" color="blue" />
-                                <Label basic content={activity.category} />
+                                <Label basic content={activity.sentence} />
                             </Item.Extra>
                         </Item.Content>
                     </Item>
